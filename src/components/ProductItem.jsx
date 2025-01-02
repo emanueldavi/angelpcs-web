@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
+
 export function ProductItem({index, name, price, img}) {
   return (
     <>
-      <div className="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
-        <a key={index} href="#">
+      <div key={index} className="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+        <Link  to={`/product/${index}`}>
           <img
             key={index}
             className="hover:grow hover:shadow-lg h-[272px] w-full"
@@ -19,7 +21,7 @@ export function ProductItem({index, name, price, img}) {
             </svg>
           </div>
           <p className="pt-1 text-gray-900">{price}</p>
-        </a>
+        </Link>
       </div>
     </>
   );

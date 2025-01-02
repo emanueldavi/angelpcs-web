@@ -49,8 +49,8 @@ export function ProductSection() {
             </div>
           </nav>
 
-          {LAPTOPS_DATA.map(({ name, img, ram }, index) => (
-            <ProductItem name={name} img={img} price={ram} index={index} />
+          {LAPTOPS_DATA.map(laptop => (
+            <ProductItem name={laptop.name} img={laptop.img} price={laptop.ram} index={laptop.id} />
           ))}
 
           <div className="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
