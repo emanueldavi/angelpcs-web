@@ -112,7 +112,7 @@ export function ProductPage() {
                 <span class="title-font font-medium text-2xl text-gray-900">
                   {product.price}
                 </span>
-                <a href={getLink(product.name)} target="_blank" class=" flex ml-auto text-white bg-green-700 border-0 py-2 px-6 focus:outline-none hover:bg-green-800 rounded">
+                <a href={getLink(product.brand + " " + product.model)} target="_blank" class=" flex ml-auto text-white bg-green-700 border-0 py-2 px-6 focus:outline-none hover:bg-green-800 rounded">
                   Ordenar en WhatsApp
                 </a>
                 {/* <button class="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">
