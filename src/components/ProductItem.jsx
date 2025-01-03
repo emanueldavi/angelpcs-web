@@ -3,15 +3,17 @@ import { Link } from "react-router-dom";
 export function ProductItem({index, name, price, img}) {
   return (
     <>
-      <div key={index} className="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+      <div key={index} className="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col hover:grow hover:shadow-lg">
         <Link  to={`/product/${index}`}>
-          <img
-            key={index}
-            className="hover:grow hover:shadow-lg h-[272px] w-full"
-            src={img}
-          />
+          <div key={index} className="flex min-h-[272px]">
+            <img
+              className="w-auto object-cover m-auto px-1"
+              src={img}
+            />
+          </div>
+          
           <div key={index} className="pt-3 flex items-center justify-between">
-            <p className="">{name}</p>
+            <p className="">{name} </p>
             <svg
               className="h-6 w-6 fill-current text-gray-500 hover:text-black"
               xmlns="http://www.w3.org/2000/svg"
