@@ -221,7 +221,7 @@ const ProductPage = () => {
                 {product.name || product.model}
               </h1>
               <h2 className="text-lg text-gray-500">{product.brand}</h2>
-              <p className="text-2xl font-semibold text-primary mb-4">
+              <p className="text-2xl font-semibold text-clientPrimary mb-4">
                 {product.price}
               </p>
               {/* Reviews */}

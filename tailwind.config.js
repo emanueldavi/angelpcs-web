@@ -10,13 +10,13 @@ export default {
   theme: {
     extend: {
       colors: {
-      primary: "#2563eb",
-      secondary: "#334155",
-      tertiary: "#47586e",
+      clientPrimary: "#2563eb",
+      clientSecondary: "#334155",
+      clientTertiary: "#47586e",
             
-      accent: "#fbbf24",
-      background: "#fff",
-      text: "#fff",
+      clientAccent: "#fbbf24",
+      clientBackground: "#fff",
+      clientText: "#fff",
     }},
   },
   plugins: [flowbiteReact],

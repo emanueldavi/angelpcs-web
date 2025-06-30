@@ -25,7 +25,7 @@ const PrincipalPage = () => {
   return (
     <>
       <section className=" py-5">
-        <div className="container mx-auto flex items-center flex-wrap pt-4 pb-5 border-y border-secondary">
+        <div className="container mx-auto flex items-center flex-wrap pt-4 pb-5 border-y border-clientSecondary">
           <nav id="store" className="w-full z-30 top-0 px-6 py-1">
             <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3">
               <a
@@ -77,7 +77,7 @@ const PrincipalPage = () => {
           <div className="w-full flex justify-end mt-8">
               <Link
                 to="/categoria/laptops"
-                className="px-6 py-2 gap-2 text-secondary rounded hover:bg-primary-dark transition flex items-center"
+                className="px-6 py-2 gap-2 text-clientSecondary rounded hover:bg-clientPrimary-dark transition flex items-center"
               >
                 Ver todos  <HiOutlineArrowRight />
               </Link>
