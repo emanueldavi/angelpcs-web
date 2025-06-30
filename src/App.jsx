@@ -1,21 +1,20 @@
-import './App.css'
-import { Routes, Route} from 'react-router-dom'
-import { Home } from '@/pages/Home.jsx'
-import { ProductPage } from '@/pages/ProductView.jsx'
+import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import ClientRoutes from '@/client/ClientRoutes.jsx';
+import AdminRoutes from '@/admin/AdminRoutes.jsx';
 
 function App() {
+    return (
+        <div className="App">
+            <Routes>
+                {/* Rutas del cliente */}
+                <Route path="/*" element={<ClientRoutes />} />
 
-  return (
-    <>
-      <div className='App'> 
-          <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/product/:id" element={<ProductPage />} />
-          </Routes>
-      </div>
-      
-    </>
-  )
+                {/* Rutas del admin */}
+                <Route path="/admin/*" element={<AdminRoutes />} />
+            </Routes>
+        </div>
+    );
 }
 
-export default App
+export default App;
